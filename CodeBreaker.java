@@ -10,8 +10,8 @@ import java.util.stream.IntStream;
 public class CodeBreaker {
 
     private final Scanner scanner;
-    private final int MAX_NUMBER;  // must be smaller than 10
-    private final int CODE_LENGTH; // must be smaller than MAX_NUMBER
+    private final int MAX_NUMBER;  // must be less than 10
+    private final int CODE_LENGTH; // must be less than MAX_NUMBER
     private int tryCount;
     private int playCount = 0;
 
@@ -52,7 +52,7 @@ public class CodeBreaker {
 
     private void guessAnswer(List<Integer> correctAnswer) {
         tryCount++;
-        System.out.print("What you guess? ");
+        System.out.print("What's your guess? ");
         List<Integer> playerGuess = getPlayerGuess();
 
         if (correctAnswer.equals(playerGuess)) {
@@ -98,8 +98,8 @@ public class CodeBreaker {
 
     private void showWinResults() {
         System.out.println("You Win!");
-        System.out.println("You tried " + tryCount + " times.");
-        System.out.println("And you played the game " + playCount + " times.");
+        System.out.println("You tried " + tryCount + " time(s).");
+        System.out.println("And you played the game " + playCount + " time(s).");
     }
 
     private void showHints(List<Integer> correctAnswer, List<Integer> playerGuess) {
