@@ -1,11 +1,11 @@
-# CodeBreaker
+<h1>CodeBreaker <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="32" height="32"/></h1>
 
 > This is CodeBreaker written in Java.  
 [What is the origin of CodeBreaker?](https://en.wikipedia.org/wiki/Bulls_and_Cows) (Bulls and Cows, Hit and Blow)
 
 ## How to play
 
-Only run bat file.
+Only execute bat file.
 
 ```shell
 $ run.bat
@@ -15,10 +15,12 @@ $ run.bat
 ## Document
 ### `public CodeBreaker(int maxNumber, int codeLength)`
 #### `maxNumber`
-Default: 7  
+> Default: 7
+
 You can specify a maximum value for the code. This must be less than 10.
 #### `codeLength`
-Default: 3  
+> Default: 3
+
 You can specify a length value for the code. This must be less than `maxNumber`.
 #### Example
 ```java
