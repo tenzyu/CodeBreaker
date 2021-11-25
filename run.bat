@@ -1,0 +1,1 @@
+javac CodeBreaker.java Main.java && java Main
